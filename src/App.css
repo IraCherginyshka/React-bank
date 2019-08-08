@@ -1,33 +1,91 @@
-.App {
-  text-align: center;
+.app {
+  width: 440px;
+  margin: 100px auto;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  color: rgba(102, 102, 102, .7);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  height: 50px;
+  padding-left: 71.5px;
+  margin-bottom: 34px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header__logo {
+  font-size: 40px;
+  letter-spacing: .4px;
+  color: rgb(23, 162, 184);
 }
 
-.App-link {
-  color: #61dafb;
+.header__title {
+  font-size: 20px;
+  letter-spacing: .2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  padding: 34px 71.5px;
+  border: 1px solid rgba(153, 153, 153, 0.33);
+  border-radius: 5.51px;
+}
+
+.input {
+  height: 40px;
+  padding-left: 40px;
+  border: 1px solid rgba(153, 153, 153, 0.28);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font-size: 14px;
+  letter-spacing: .14px;
+}
+
+input::placeholder {
+  color: rgba(102, 102, 102, 0.5);
+}
+.input__group {
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.input__label {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  color: rgba(102, 102, 102, 0.5);
+}
+
+.valid {
+  display: block;
+  width: 20px;
+  position: absolute;
+  top: 5px;
+  right: -30px;
+}
+.invalid {
+  position: absolute;
+  top: 5px;
+  right: -23px;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+}
+.form-control:invalid,
+.form-control:valid {
+  background-image: none;
+}
+
+.button {
+  width: 100px;
+  margin-top: 6px;
+  font-size: 18px;
+  letter-spacing: .18px;
+}
+
+.button__caption {
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  color: rgb(102, 102, 102);
+  letter-spacing: .12px;
+}
+
+.button__link {
+  color: rgb(113, 149, 177);
 }
